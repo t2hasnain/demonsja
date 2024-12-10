@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Videos</title>
+</head>
+<body>
+    <header>
+        <h1>Available Videos</h1>
+    </header>
+    <main>
+        <ul class="video-list">
+            <% videos.forEach(video => { %>
+                <li>
+                    <video controls width="600">
+                        <source src="/uploads/<%= video %>" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><%= video %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+</body>
+</html>
