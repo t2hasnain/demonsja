@@ -1,0 +1,132 @@
+body,html 
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/login-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login__Form {
+    max-width: 470px;
+    width: 100%;
+    padding: 15px 70px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 5%;
+}
+.login__title 
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Garamond (serif)";
+}
+
+.login__inputs {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+.form-control 
+{
+    padding-right: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+
+.form-control:hover::placeholder{
+    color: orange;
+}
+
+.form-control:focus + .icon {
+    color: orange;
+}
+
+.form-control + .icon
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+
+.login__button
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login__button:hover
+{
+    background-color: wheat;
+}
+
+.login__register {
+    text-align: center;
+    margin-top: -125px;
+    color: yellow;
+    position: relative;
+    z-index: 1;
+}
+
+.login__register p {
+    margin: 0;
+}
+
+.login__register a {
+    color: white;
+    text-decoration: none;
+}
+
+.login__register a:hover 
+{
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+}
+
+.not-registered-glow
+{
+    text-shadow: 2px 1px #008080;
+}

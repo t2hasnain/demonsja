@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Ensure HTTPS so that it is automatically opened in HTTPS even though user opens in http
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect only the root to videos.php and neglet to others
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /videos.php [L]
